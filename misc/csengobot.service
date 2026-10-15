@@ -1,0 +1,15 @@
+[Unit]
+Description=SZLG Csengő Discord Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=studio
+WorkingDirectory=/home/studio/szlg-csengo-bot
+ExecStart=/home/studio/szlg-csengo-bot/venv/bin/python3 /home/studio/szlg-csengo-bot/csengobot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
