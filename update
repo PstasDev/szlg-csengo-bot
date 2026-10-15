@@ -1,0 +1,3 @@
+git pull
+/home/studio/szlg-csengo-bot/venv/bin/python3 -m pip install -r requirements.txt
+sudo systemctl restart csengobot.service
